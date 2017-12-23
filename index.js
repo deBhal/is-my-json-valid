@@ -171,6 +171,10 @@ var compile = function(schema, cache, root, reporter, opts) {
       }
     }
 
+    if (node === false) {
+      error('never matches')
+    }
+
     if (node.required === true) {
       indent++
       validate('if (%s === undefined) {', name)

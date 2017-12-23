@@ -204,6 +204,7 @@ Here is a list of possible `message` values for errors:
 * `has less length than allowed`
 * `is less than minimum`
 * `is more than maximum`
+* `never matches`
 
 ## Performance
 
