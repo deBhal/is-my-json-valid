@@ -1,0 +1,94 @@
+[
+    {
+        "description": "boolean true matches anything",
+        "schema": true,
+        "tests": [
+            {
+                "description": "boolean true matches true",
+                "data": true,
+                "valid": true
+            },
+            {
+                "description": "boolean true matches false",
+                "data": false,
+                "valid": true
+            },
+            {
+                "description": "boolean true matches an integer",
+                "data": 1,
+                "valid": true
+            },
+            {
+                "description": "boolean true matches a float",
+                "data": 1.1,
+                "valid": true
+            },
+            {
+                "description": "boolean true matches a string",
+                "data": "foo",
+                "valid": true
+            },
+            {
+                "description": "boolean true matches an object",
+                "data": {},
+                "valid": true
+            },
+            {
+                "description": "boolean true matches an array",
+                "data": [],
+                "valid": true
+            },
+            {
+                "description": "boolean true matches null",
+                "data": null,
+                "valid": true
+            }
+        ]
+    },
+    {
+        "description": "boolean false matches nothing",
+        "schema": false,
+        "tests": [
+            {
+                "description": "boolean false does not match true",
+                "data": true,
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match false",
+                "data": false,
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match an integer",
+                "data": 1,
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match a float",
+                "data": 1.1,
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match a string",
+                "data": "foo",
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match an object",
+                "data": {},
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match an array",
+                "data": [],
+                "valid": false
+            },
+            {
+                "description": "boolean false does not match null",
+                "data": null,
+                "valid": false
+            }
+        ]
+    }
+]

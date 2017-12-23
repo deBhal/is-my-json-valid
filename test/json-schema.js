@@ -22,3 +22,6 @@ var loadAndRunTests = suiteName =>
 
 readDir('json-schema-draft4', {excluding: ['definitions.json', 'refRemote.json']})
   .forEach(loadAndRunTests('json-schema-test-suite'))
+
+readDir('extra')
+  .forEach(loadAndRunTests('extra-test-suite'))
