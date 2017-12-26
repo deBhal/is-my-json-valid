@@ -171,6 +171,10 @@ var compile = function(schema, cache, root, reporter, opts) {
       }
     }
 
+    if (node === true) {
+      return
+    }
+
     if (node.required === true) {
       indent++
       validate('if (%s === undefined) {', name)
