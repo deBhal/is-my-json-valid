@@ -2,11 +2,11 @@ var tape = require('tape')
 var fs = require('fs')
 var validator = require('../')
 
-var files = fs.readdirSync(__dirname+'/json-schema-draft4')
+var files = fs.readdirSync(__dirname+'/json-schema-draft7')
   .map(function(file) {
     if (file === 'definitions.json') return null
     if (file === 'refRemote.json') return null
-    return require('./json-schema-draft4/'+file)
+    return require('./json-schema-draft7/'+file)
   })
   .filter(Boolean)
 
